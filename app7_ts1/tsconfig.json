@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "commonjs",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"noUnusedParameters": true,
+		"noUnusedLocals": true,
+		"noImplicitReturns": true,
+		"outDir": "src/js"
+	},
+	"include": ["src/ts/**/*"]
+}

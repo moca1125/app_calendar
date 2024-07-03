@@ -1,0 +1,16 @@
+{
+  "events": [
+    {
+			"id": 1,
+      "title": "Reactを学習する",
+      "startDateTime": "2022-12-16 14:00",
+      "endDateTime": "2022-12-16 16:00"
+    },
+    {
+			"id": 2,
+      "title": "忘年会をする",
+      "startDateTime": "2022-12-30 19:00",
+      "endDateTime": "2022-12-30 22:00"
+    }
+  ]
+}

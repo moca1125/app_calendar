@@ -1,0 +1,71 @@
+:root {
+	/* 色管理用の変数 */
+	--black-color: #333;
+	--primary-color: #00afa8;
+	--secondary-color: #63d297;
+	--gray-color: #dadce0;
+}
+
+/* ---------- base ---------- */
+body {
+	color: var(--black-color);
+	font-size: 16px;
+	font-family: 'Noto Sans JP', sans-serif;
+	line-height: 1.75;
+}
+
+/* ---------- layout ---------- */
+.l_header {
+	background-color: var(--primary-color);
+}
+
+/* ---------- calendar ---------- */
+.calendar {
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 98px);
+}
+
+/* 曜日の行 */
+.calendar_table-head {
+	height: 30px;
+	border-bottom: 1px solid var(--gray-color);
+}
+
+/* 行、列を均等に配置する */
+.calendar_table-row,
+.calendar_table-data {
+	/* 
+    flex-grow: フレックスアイテムの幅の伸び率（初期値: 0）
+    flex-basis: フレックスアイテムの基本の幅（初期値: auto）
+  */
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+/* 行線 */
+.calendar_table-row:not(:last-child) {
+	border-bottom: 1px solid var(--gray-color);
+}
+
+/* 列線 */
+.calendar_table-data:not(:last-child) {
+	border-right: 1px solid var(--gray-color);
+}
+
+/* 今月以外の日は灰色にする */
+.calendar_table-data.is-disabled {
+	color: var(--gray-color);
+}
+
+.calendar_date {
+	width: 28px;
+	height: 28px;
+	display: block;
+	margin: 0 auto;
+}
+
+/* 今日の日付 */
+.calendar_date-current {
+	border-radius: 50%;
+}
